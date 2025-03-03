@@ -28,7 +28,7 @@
   "pools": {
     "title": "Active Pools",
     "poolId": "Pool #{id}",
-    "priceOsmo": "OSMO Price",
+    "priceOsmo": "BFH Price",
     "rewardDistribution": "Reward distribution in",
     "myPools": "My Pools",
     "APR": "APR",

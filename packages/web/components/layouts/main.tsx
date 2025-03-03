@@ -32,7 +32,7 @@ export const MainLayout: FunctionComponent<{
           <OsmosisFullLogo onClick={() => router.push("/")} />
         </div>
       )}
-      <article className="fixed md:hidden flex flex-col inset-y-0 z-40 bg-osmoverse-800 px-2 py-6 w-sidebar overflow-x-hidden">
+      <article className="fixed md:hidden flex flex-col inset-y-0 z-40 bg-osmoverse-900 px-2 py-6 w-sidebar overflow-x-hidden">
         {showBlockLogo && (
           <div className="grow-0 ml-2 z-50 w-sidebar mx-auto">
             <OsmosisFullLogo width={166} onClick={() => router.push("/")} />
@@ -56,11 +56,11 @@ const OsmosisFullLogo: FunctionComponent<{
   width?: number;
   height?: number;
   onClick?: () => void;
-}> = ({ width = 178, height = 48, onClick }) => (
+}> = ({ width = 200, height = 68, onClick }) => (
   <Image
     className="hover:cursor-pointer"
-    src={IS_FRONTIER ? "/osmosis-logo-frontier.svg" : "/osmosis-logo-main.svg"}
-    alt="osmosis logo"
+    src={IS_FRONTIER ? "/bfhevm.svg" : "/osmosis-logo-main.svg"}
+    alt="bfhevm logo"
     width={width}
     height={height}
     onClick={(e) => {
