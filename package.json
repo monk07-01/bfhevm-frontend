@@ -42,6 +42,7 @@
   "homepage": "https://github.com/osmosis-labs/osmosis-frontend#readme",
   "devDependencies": {
     "@types/jest": "^27.4.0",
+    "@types/node": "^22.13.8",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "cross-env": "^7.0.3",
@@ -54,7 +55,10 @@
     "pre-commit": "^1.2.2",
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.2",
-    "typescript": "4.5.4"
+    "typescript": "5.8.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@keplr-wallet/types": "^0.12.190",
+    "@keplr-wallet/unit": "^0.12.190"
+  }
 }
