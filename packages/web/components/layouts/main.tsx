@@ -59,7 +59,7 @@ const OsmosisFullLogo: FunctionComponent<{
 }> = ({ width = 200, height = 68, onClick }) => (
   <Image
     className="hover:cursor-pointer"
-    src={IS_FRONTIER ? "/bfhevm.svg" : "/osmosis-logo-main.svg"}
+    src={IS_FRONTIER ? "/osmosis-logo-main.svg" : "/bfhevm.svg"}
     alt="bfhevm logo"
     width={width}
     height={height}

@@ -7,6 +7,8 @@ import { EventName, IS_FRONTIER } from "../config";
 import { Dec } from "@keplr-wallet/unit";
 import { useMemo, useRef } from "react";
 import { useAmplitudeAnalytics } from "../hooks";
+import TestnetTokenFaucet from "../pages/testnettokenfaucet"; // Adjust the path if necessary
+
 
 const Home: NextPage = observer(function () {
   const { chainStore, queriesStore } = useStore();
@@ -138,6 +140,10 @@ const Home: NextPage = observer(function () {
 
   return (
     <main className="relative bg-wireframes-darkGrey h-full">
+    {/* Testnet Token Faucet at the Top */}
+    <div className="absolute top-2 left-4">
+      <TestnetTokenFaucet />
+    </div>
       <div className="absolute w-full h-full bg-home-bg-pattern bg-repeat-x bg-cover">
         <svg
           className="absolute w-full h-full lg:hidden"
